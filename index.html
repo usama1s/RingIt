@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <title>Ring It</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="canvas-complex" class="mob-call" onload="openPlaceCallBox()">
+    <section class="floating-mob-section">
+      <div class="place-call-floating-btn">
+        <button type="button" name="button" onclick="openFloatingCallDialogue();">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <i class="fa fa-times hideIt" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="calling-dialogue-box-mob hideIt" id="calling-dialogue-box-mob">
+        <div class="place-call-div hideIt" id="place-call-div">
+          <div class="mainn">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="" value="" placeholder="Name">
+              <input type="email" name="" value="" placeholder="Email">
+              <button type="button" name="button" onclick="showRingingCallBox();">Place Call</button>
+            </form>
+          </div>
+        </div>
+        <div class="ringing-call-div hideIt" id="ringing-call-div">
+          <div class="mainn">
+            <div class="floating-circles">
+              <div class="circle">
+                <div class="">
+
+                </div>
+              </div>
+              <div class="circle">
+                <div class="">
+
+                </div>
+              </div>
+              <div class="circle">
+                <div class="">
+
+                </div>
+              </div>
+              <div class="circle">
+                <div class="">
+
+                </div>
+              </div>
+            </div>
+            <div class="title">
+              <h1>Ringing</h1>
+            </div>
+            <button class="hang-up-btn" type="button" name="button" onclick="">Hang Up</button>
+          </div>
+        </div>
+
+        <div class="call-in-progress-div hideIt" id="call-in-progress-div">
+          <div class="mainn">
+            <div class="zooming-circles">
+              <div class="icon-1">
+
+              </div>
+              <div class="icon-2">
+
+              </div>
+              <div class="icon-3">
+
+              </div>
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+            </div>
+
+            <div class="timerr">
+              <div class="stopwatch"></div>
+          		<ul class="results"></ul>
+              <!-- <ul class="timer-result">Display</ul> -->
+            </div>
+            <button class="hang-up-btn" type="button" name="button" onclick="showEndCallBox()">Hang Up</button>
+          </div>
+        </div>
+
+        <div class="end-call-div place-call-div hideIt" id="end-call-div">
+          <div class="mainn">
+            <div class="imgg">
+              <img src="images/michael.png" alt="person">
+            </div>
+            <div class="title">
+              <h1>Michael John</h1>
+            </div>
+
+            <select class="" name="">
+              <option value="">Support</option>
+              <option value="">Contact Us</option>
+            </select>
+            <button type="button" name="button" onclick="showRingingCallBox()">Redial</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <script src="js/JavaScript.js" type="text/javascript"></script>
+    <script src="js/timer.js" type="text/javascript"></script>
+  </body>
+</html>
